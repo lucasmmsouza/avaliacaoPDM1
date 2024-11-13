@@ -1,0 +1,136 @@
+Strings.xml
+
+<resources>
+    <string name="app_name">Lucas Miguel Martins de Souza</string>
+    <string-array name="Elementos">
+        <item>Hidrogenio</item>
+        <item>Lítio</item>
+        <item>Sódio</item>
+        <item>Potássio</item>
+        <item>Rubídio</item>
+        <item>Césio</item>
+        <item>Frâncio</item>
+    </string-array>
+
+    <string-array name="Sigla">
+        <item>H</item>
+        <item>Li</item>
+        <item>Na</item>
+        <item>K</item>
+        <item>Rb</item>
+        <item>Cs</item>
+        <item>Fr</item>
+    </string-array>
+
+    <string-array name="Massa">
+        <item>1,008u</item>
+        <item>6,941u</item>
+        <item>22,990u</item>
+        <item>39,098u</item>
+        <item>85,468u</item>
+        <item>132,905u</item>
+        <item>223u</item>
+    </string-array>
+
+    activity_main.xml
+    <?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@color/LightGreen">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp"
+            android:text="Elementos da Família 1A"
+            android:textSize="18sp" />
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="594dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Jogar"/>
+
+    </LinearLayout>
+
+    activity_main2.xml
+    <?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@color/LightGreen">
+
+        <TextView
+            android:id="@+id/tvNome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Digite seu nome"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nome"
+            android:inputType="textPersonName"/>
+
+        <TextView
+            android:id="@+id/tvNumero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:text="Digite um número entre 1 e 7"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtNumero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Número"
+            android:inputType="number"/>
+
+        <Button
+            android:id="@+id/btnEnviar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Selecionar Elementos"
+            android:backgroundTint="@color/Green"/>
+    </LinearLayout>
+
+    activitymain3.xml
+    <?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Elementos Selecionados"
+            android:textSize="18sp"
+            android:paddingBottom="16dp"/>
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="594dp" />
+    </LinearLayout>
+
+
+</resources>
